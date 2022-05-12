@@ -56,7 +56,7 @@ pipeline {
         }
         stage('createeks') { 
             steps { 
-                sh 'eksctl create cluster --name ${NAMECLUSTER} --version ${K8SVERSION} --region ${REGION} --nodegroup-name ${NODESGROUPNAME} --node-type ${SIZEMACHINE} --nodes ${NUMNODOSCLUSTEREKS}' --node-type ${SIZEMACHINE} --nodes ${NUMNODOSCLUSTEREKS}'
+                sh 'eksctl create cluster --name ${NAMECLUSTER} --version ${K8SVERSION} --region ${REGION} --nodegroup-name ${NODESGROUPNAME} --node-type ${SIZEMACHINE} --nodes ${NUMNODOSCLUSTEREKS}'
             }
         }
         stage('Download') {
