@@ -17,7 +17,7 @@ pipeline {
                                 trim: true
                             ),
                             string(
-                                defaultValue: 'us-east-2',
+                                defaultValue: 'us-west-1',
                                 name: 'REGION',
                                 trim: true
                             ),
